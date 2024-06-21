@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get the latest weather forecast for your city.">
+    <title>Weather Forecast - Get Accurate Weather Updates</title>
+    <link rel="stylesheet" href="weatherforecst.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Weather Forecast</h1>
+        </div>
+    </header>
+    
+    <main>
+        <section class="container">
+            <div id="weather">
+                <form id="weatherForm" aria-labelledby="formHeading">
+                    <h2 id="formHeading" hidden>Enter City for Weather Forecast</h2>
+                    <input type="text" id="city" placeholder="Enter city" aria-label="City name" required>
+                    <button type="submit">Get Weather</button>
+                </form>
+                <div id="weatherInfo" aria-live="polite">
+                    <h2 id="cityName"></h2>
+                    <p id="temperature"></p>
+                    <p id="description"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Weather Forecast</p>
+        </div>
+    </footer>
+
+    <script src="forecast.js"></script>
+</body>
+</html>
+
